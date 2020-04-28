@@ -1,4 +1,4 @@
-#1194714850:AAGsCicfXKJrK4Z_QICDYxF6_G9jNYalMu8
+
 from telegram.ext import Updater, CommandHandler
 
 def welcome(update, content):
@@ -7,7 +7,7 @@ def welcome(update, content):
     content.bot.send_message(chat_id = update.effective_chat.id, text = message)
 
 def main():
-    token = '1194714850:AAGsCicfXKJrK4Z_QICDYxF6_G9jNYalMu8'
+    token = 'token do telegram'
     updater = Updater(token = token, use_context = True)
     updater.start_polling()
     print('Updater' + str(updater))
